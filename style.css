@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+main nav {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav #center {
+  display: flex;
+  padding: 10px;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav #center .line {
+  height: 1px;
+  width: 15%;
+  border: 1px solid red;
+}
+main nav #center img {
+  width: 17%;
+}
+main nav #center #left {
+  display: flex;
+  width: 30% !important;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+main section {
+  height: 88.2%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main section #left-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 15px;
+}
+main section #left-section1 h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+main section #left-section1 h1 span {
+  color: red;
+}
+main section #left-section1 p {
+  padding: 10px 60px 0 0;
+}
+main section #left-section1 button {
+  padding: 15px 30px;
+  background-color: red;
+  border: none;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+main section img {
+  height: 87%;
+  position: absolute;
+  transform: translate(125%, 0);
+  z-index: 10;
+  pointer-events: none;
+}
+main section #center-section1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+main section #center-section1 #bg {
+  height: 80vh;
+  width: 28vw;
+  background-image: url(https://imgs.search.brave.com/6sovAckzTPOaQoUB8qy1G2Npwecc7wp4bvzQu8EhrN4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtd2l4bXAtZWQz/MGE4NmI4YzRjYTg4/Nzc3MzU5NGMyLndp/eG1wLmNvbS9pLzA2/ODZkOGNhLWEzMWYt/NGJlYi05NzQwLWU3/YjQ1YmI3MjNmZC9k/Y2lwYThvLWM5NTQy/MDJkLWRiNzAtNGI0/Ni05MWY3LTQwNzdh/M2Q0MjAyMS5qcGc);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  border-radius: 48% 48% 0 0;
+}
+main section #right-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 80px;
+  gap: 10px;
+}
+main section #right-section1 .content {
+  padding: 10px 0;
+  width: 80%;
+  display: flex;
+  border-bottom: 2px solid grey;
+  justify-content: space-between;
+  align-items: center;
+}
+main section #right-section1 .content h3,
+main section #right-section1 .content i {
+  color: grey;
+}
+main section #right-section1 p {
+  padding-right: 80px;
+  font-size: 0.8rem;
+  color: grey;
+}
+main section #right-section1 h1 {
+  position: relative;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  width: 50px;
+}
+
+@media (max-width: 1024px) {
+  main nav {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  main nav #center {
+    width: 70%;
+    padding: 5px;
+  }
+  main nav #center img {
+    width: 25%;
+  }
+  main nav #center #left {
+    width: 35% !important;
+    gap: 5px;
+  }
+  main nav #center .line {
+    width: 10%;
+  }
+  main nav #center h5 {
+    font-size: 0.85rem;
+  }
+  main section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main section img {
+    transform: translate(100%, 5%);
+    height: 75%;
+  }
+  main section #left-section1 {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  main section #left-section1 h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  main section #left-section1 p {
+    padding: 10px 20px 0 0;
+    font-size: 0.9rem;
+  }
+  main section #left-section1 button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  main section #center-section1 {
+    padding: 30px;
+  }
+  main section #center-section1 #bg {
+    height: 65vh;
+    width: 32vw;
+  }
+  main section #right-section1 {
+    padding: 50px 20px;
+  }
+  main section #right-section1 h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  main section #right-section1 .content {
+    width: 90%;
+  }
+  main section #right-section1 .content h3 {
+    font-size: 0.95rem;
+  }
+  main section #right-section1 p {
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  main nav {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  main nav #center {
+    width: 100%;
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0 0 0;
+  }
+  main nav #center .line {
+    display: none;
+  }
+  main nav #center img {
+    width: 100%;
+    max-width: 100px;
+    order: -1;
+    margin-bottom: 10px;
+  }
+  main nav #center #left {
+    width: 100% !important;
+    justify-content: space-around;
+  }
+  main nav #center h5 {
+    font-size: 0.85rem;
+  }
+  main nav #left {
+    order: 1;
+  }
+  main nav i {
+    order: 2;
+    font-size: 1.2rem;
+  }
+  main section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+  main section img {
+    display: none !important;
+  }
+  main section #left-section1 {
+    padding: 30px 25px;
+    align-items: center;
+    text-align: center;
+  }
+  main section #left-section1 h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  main section #left-section1 p {
+    padding: 15px 0;
+    font-size: 0.95rem;
+  }
+  main section #left-section1 button {
+    padding: 13px 28px;
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+  main section #center-section1 {
+    padding: 20px;
+    order: 3;
+  }
+  main section #center-section1 #bg {
+    height: 55vh;
+    width: 75vw;
+    max-width: 450px;
+    border-radius: 45% 45% 0 0;
+  }
+  main section #right-section1 {
+    padding: 30px 25px;
+    order: 2;
+    align-items: flex-start;
+  }
+  main section #right-section1 h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  main section #right-section1 .content {
+    width: 100%;
+    padding: 12px 0;
+  }
+  main section #right-section1 .content h3 {
+    font-size: 1rem;
+  }
+  main section #right-section1 .content i {
+    font-size: 1.2rem;
+  }
+  main section #right-section1 h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  main section #right-section1 p {
+    padding-right: 0;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 480px) {
+  main nav {
+    padding: 12px 15px;
+    gap: 12px;
+  }
+  main nav #center {
+    gap: 12px;
+    padding: 12px 0 0 0;
+  }
+  main nav #center img {
+    max-width: 80px;
+  }
+  main nav #center #left {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  main nav #center h5 {
+    font-size: 0.8rem;
+  }
+  main nav #left h5 {
+    font-size: 0.85rem;
+  }
+  main section {
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+  main section #left-section1 {
+    padding: 25px 20px;
+    gap: 12px;
+  }
+  main section #left-section1 h1 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  main section #left-section1 p {
+    font-size: 0.9rem;
+    padding: 12px 0;
+  }
+  main section #left-section1 button {
+    padding: 11px 24px;
+    font-size: 0.9rem;
+  }
+  main section #left-section1 button i {
+    margin-right: 5px;
+  }
+  main section #center-section1 {
+    padding: 15px;
+  }
+  main section #center-section1 #bg {
+    height: 45vh;
+    width: 85vw;
+    max-width: 350px;
+  }
+  main section #right-section1 {
+    padding: 25px 20px;
+    gap: 10px;
+  }
+  main section #right-section1 h1 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  main section #right-section1 .content {
+    padding: 10px 0;
+  }
+  main section #right-section1 .content h3 {
+    font-size: 0.95rem;
+  }
+  main section #right-section1 .content i {
+    font-size: 1.1rem;
+  }
+  main section #right-section1 h3 {
+    font-size: 0.95rem;
+  }
+  main section #right-section1 p {
+    font-size: 0.85rem;
+  }
+}/*# sourceMappingURL=style.css.map */
